@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>byvex Grid</title>
+    <!-- main css link  -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- splide style link  -->
+    <link rel="stylesheet" href="./css/splide.min.css">
+    <!-- splide script link  -->
+    <script src="./js/splide.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container-xxl d-lg-block d-none">
+            <div class="row p-2">
+                <div class="col-md-6 col-sm-12">
+                    <figure class="logo_header">
+                        <img src="./image/PVVNL-Logo.png" alt="purvanchal logo" class="img-fluid w-70">
+                    </figure>
+                </div>
+                <div class="col-md-6 col-sm-12 text-end">
+                    <div class="top_search_btn">
+                        <button class="language_tag">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                    class="bi bi-globe-central-south-asia" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM4.882 1.731a.482.482 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.721.721 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a.996.996 0 0 0-.462-.04 7.03 7.03 0 0 1 2.45-2.027Zm-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.78.78 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.454.454 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282a.61.61 0 0 0 .04-.001 7.003 7.003 0 0 1-12.658.905Z" />
+                                </svg>
+                            </span>
+                            <span>
+                                Hindi
+                            </span>
+                        </button>
+                        <div class="search_field">
+                            <input type="text" name="seach" id="search" placeholder="Search">
+                            <a href="#" class="search_btn_ftp">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="wheaL_icon_here">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-wheelchair" viewBox="0 0 16 16">
+                                <path
+                                    d="M12 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm-.663 2.146a1.5 1.5 0 0 0-.47-2.115l-2.5-1.508a1.5 1.5 0 0 0-1.676.086l-2.329 1.75a.866.866 0 0 0 1.051 1.375L7.361 3.37l.922.71-2.038 2.445A4.732 4.732 0 0 0 2.628 7.67l1.064 1.065a3.25 3.25 0 0 1 4.574 4.574l1.064 1.063a4.732 4.732 0 0 0 1.09-3.998l1.043-.292-.187 2.991a.872.872 0 1 0 1.741.098l.206-4.121A1 1 0 0 0 12.224 8h-2.79l1.903-2.854ZM3.023 9.48a3.25 3.25 0 0 0 4.496 4.496l1.077 1.077a4.75 4.75 0 0 1-6.65-6.65l1.077 1.078Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_navigation">
+            <div class="container-md">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand d-lg-none d-block" href="#">
+                            <figure class="logo_header">
+                                <img src="./image/PVVNL-Logo.png" alt="purvanchal logo" class="img-fluid w-70">
+                            </figure>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                                    <ul class="dropdown-menu">
+
+                                        <li><a class="dropdown-item" href="#">About Us-1</a></li>
+                                        <li><a class="dropdown-item" href="#">About Us-2</a></li>
+                                        <li><a class="dropdown-item" href="#">About Us-3</a></li>
+                                        <li><a class="dropdown-item" href="#">About Us-4</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Schemes</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link">Bill payment</a>
+                                    <ul class="dropdown-menu">
+
+                                        <li><a class="dropdown-item" href="#">Action-1</a></li>
+                                        <li><a class="dropdown-item" href="#">Action-2</a></li>
+                                        <li><a class="dropdown-item" href="#">Action-3</a></li>
+                                        <li><a class="dropdown-item" href="#">Action-4</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">connection services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">consumer</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">commercial</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">transmission</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">tenders</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">media</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                    <a class="navbar-brand d-lg-none d-block" href="#">
+                        <figure class="logo_header">
+                            <img src="./image/PVVNL-Logo.png" alt="purvanchal logo" class="img-fluid w-70">
+                        </figure>
+                    </a>
+                </h5>
+
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+
+                <div class="top_search_btn justify-content-evenly w-100 py-3 border-bottom">
+                    <button class="language_tag">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                class="bi bi-globe-central-south-asia" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM4.882 1.731a.482.482 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.721.721 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a.996.996 0 0 0-.462-.04 7.03 7.03 0 0 1 2.45-2.027Zm-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.78.78 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.454.454 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282a.61.61 0 0 0 .04-.001 7.003 7.003 0 0 1-12.658.905Z" />
+                            </svg>
+                        </span>
+                        <span>
+                            Hindi
+                        </span>
+                    </button>
+                    <div class="search_field">
+                        <input type="text" name="seach" id="search" placeholder="Search" class="w-100">
+                        <a href="#" class="search_btn_ftp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="wheaL_icon_here">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-wheelchair" viewBox="0 0 16 16">
+                            <path
+                                d="M12 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm-.663 2.146a1.5 1.5 0 0 0-.47-2.115l-2.5-1.508a1.5 1.5 0 0 0-1.676.086l-2.329 1.75a.866.866 0 0 0 1.051 1.375L7.361 3.37l.922.71-2.038 2.445A4.732 4.732 0 0 0 2.628 7.67l1.064 1.065a3.25 3.25 0 0 1 4.574 4.574l1.064 1.063a4.732 4.732 0 0 0 1.09-3.998l1.043-.292-.187 2.991a.872.872 0 1 0 1.741.098l.206-4.121A1 1 0 0 0 12.224 8h-2.79l1.903-2.854ZM3.023 9.48a3.25 3.25 0 0 0 4.496 4.496l1.077 1.077a4.75 4.75 0 0 1-6.65-6.65l1.077 1.078Z" />
+                        </svg>
+                    </div>
+                </div>
+
+
+                <ul class="m-2 offcanvas_menu">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Schemes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Bill payment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">connection services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">consumer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">commercial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">transmission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">tenders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">contact us</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- hero section  -->
+    <section class="hero-section">
+        <div class="container-xxl py-5">
+            <div class="tab-box">
+                <div class="tab">
+                    <button class="tablinks tab-a" onclick="billPayment(event, 'bill_pay')" id="defaultOpen">Bill
+                        Payment</button>
+                    <button class="tablinks tab-a" onclick="billPayment(event, 'bill_services')">Connection
+                        Service</button>
+                </div>
+
+                <div id="bill_pay" class="tabcontent">
+                    <div class="pt-2 pb-md-3 pb-2">
+                        <div class="tab-content">
+                            <div class="done_icon align-self-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                                    <path
+                                        d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                                </svg>
+                            </div>
+                            <div class="align-self-center">
+                                <h3>Bill Payment(Urban)</h3>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="done_icon align-self-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                                    <path
+                                        d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                                </svg>
+                            </div>
+                            <div class="align-self-center">
+                                <h3>Bill Payment(Rural)</h3>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="done_icon align-self-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                                    <path
+                                        d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                                </svg>
+                            </div>
+                            <div class="align-self-center">
+                                <h3>Prepaid Recharge (Genus meter)</h3>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="done_icon align-self-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                                    <path
+                                        d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                                </svg>
+                            </div>
+                            <div class="align-self-center">
+                                <h3>Smart meter Prepaid Recharge</h3>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="done_icon align-self-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                                    <path
+                                        d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                                </svg>
+                            </div>
+                            <div class="align-self-center">
+                                <h3>How to Pay Electricity Bill</h3>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="done_icon align-self-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                                    <path
+                                        d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                                </svg>
+                            </div>
+                            <div class="align-self-center">
+                                <h3>Online (YT Video)</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="bill_services" class="tabcontent">
+                    <div class="p-1">
+                        <div class="tab-content">
+                            <div class="done_icon align-self-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                                    <path
+                                        d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                                </svg>
+                            </div>
+                            <div class="align-self-center">
+                                <h3>Bill Payment(Urban)</h3>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="done_icon align-self-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                                    <path
+                                        d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                                </svg>
+                            </div>
+                            <div class="align-self-center">
+                                <h3>Bill Payment(Rural)</h3>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="done_icon align-self-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                                    <path
+                                        d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                                </svg>
+                            </div>
+                            <div class="align-self-center">
+                                <h3>Prepaid Recharge (Genus meter)</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Slider Section -->
+    <section class="slider-section">
+        <div class="container-xxl">
+            <div class="row py-4">
+                <div class="col-lg-8 col-12">
+                    <div class="slider_crousel">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, id.
+                        </p>
+                        <div class="next_pre_icon">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="latest_activity">
+                            <h2>latest activity</h2>
+                        </div>
+                    </div>
+                    <div class="mt-3 p-3 border slider_power_readmore">
+                        <h3> Lorem ipsum dolor sit amet consectetur adipisicing </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit assumenda nihil quasi autem
+                            voluptatum saepe numquam beatae sint nulla voluptatem veniam, animi doloribus itaque
+                            voluptatibus ex est voluptate a quo quidem rerum, quae officiis. Porro commodi repellendus
+                            magni error nesciunt cupiditate delectus eos ut corrupti! Libero in obcaecati rem aperiam.
+                            magni error nesciunt cupiditate delectus eos ut corrupti! Libero in obcaecati rem aperiam.
+                        </p>
+                        <div class="text-end">
+                            <a href="#" class="rounded-pill text-white text-uppercase text-decoration-none ">
+                                read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8 m-auto col-12">
+                    <div class="slider-card">
+                        <div class="slider-card-img border-bottom">
+                            <img src="./image/yogi_ji.jpeg" alt="">
+                            <div class="slider-img-content">
+                                <h4>Yogi Adityanath</h4>
+                                <p>Hon'ble Chief Minister Uttar Pradesh</p>
+                            </div>
+                        </div>
+                        <div class="slider-card-img border-bottom">
+                            <img src="./image/arvind_sharma.jpeg" alt="">
+                            <div class="slider-img-content">
+                                <h4>Shri Arvind Kumar Sharma</h4>
+                                <p>Hon'ble minister Energy & Add. Energy Sources Uttar Pradesh</p>
+                            </div>
+                        </div>
+                        <div class="slider-card-img">
+                            <img src="./image/tomer.jpeg" alt="">
+                            <div class="slider-img-content">
+                                <h4>Dr. somendra Tomar</h4>
+                                <p>hon'ble State minister energy & add. Energy sources uttar pradesh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News section Container -->
+    <section class="grid_section_container">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="first-card">
+                        <div class="card-head card_header_fst">
+                            <div class="santosh_task_icon align-self-center">
+
+                                <div class="align-self-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bell"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                                    </svg>
+                                </div>
+
+                                <div class="align-self-center">
+                                    <h3>Whats New</h3>
+                                </div>
+                            </div>
+                            <div class="align-self-center"> <a href="">View All</a></div>
+                        </div>
+                        <div class="whatsnew-content">
+                            <div class=" news_card_flex border-bottom mb-3">
+                                <div class="news_icons_card">
+                                    <img src="./image/newsicon.png" alt="">
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-newspaper" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z" />
+                                    <path
+                                        d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z" />
+                                </svg> -->
+                                </div>
+                                <div class="whatsnew-sub-content fst_color_date">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nam deleniti
+                                        placeat
+                                        aspernatur quisquam! Eius neque quidem quas perferendis cum!</p>
+                                    <h4>Date : 20-07-2023</h4>
+                                </div>
+                            </div>
+
+                            <div class=" news_card_flex">
+                                <div class="news_icons_card">
+                                    <img src="./image/newsicon.png" alt="">
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-newspaper" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z" />
+                                    <path
+                                        d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z" />
+                                </svg> -->
+                                </div>
+                                <div class="whatsnew-sub-content fst_color_date">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nam deleniti
+                                        placeat
+                                        aspernatur quisquam! Eius neque quidem quas perferendis cum!</p>
+                                    <h4>Date : 20-07-2023</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="first-card">
+                        <div class="card-head card_header_scnd">
+                            <div class="santosh_task_icon align-self-center">
+
+                                <div class="align-self-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-globe-central-south-asia" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM4.882 1.731a.482.482 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.721.721 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a.996.996 0 0 0-.462-.04 7.03 7.03 0 0 1 2.45-2.027Zm-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.78.78 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.454.454 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282a.61.61 0 0 0 .04-.001 7.003 7.003 0 0 1-12.658.905Z" />
+                                    </svg>
+                                </div>
+
+                                <div class="align-self-center">
+                                    <h3>Whats New</h3>
+                                </div>
+                            </div>
+                            <div class="align-self-center"> <a href="">View All</a></div>
+                        </div>
+                        <div class="whatsnew-content">
+                            <div class=" news_card_flex border-bottom mb-3">
+                                <div class="news_icons_card">
+                                    <img src="./image/newsicon.png" alt="">
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-newspaper" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z" />
+                                    <path
+                                        d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z" />
+                                </svg> -->
+                                </div>
+                                <div class="whatsnew-sub-content scnd_color_date">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <h4>Date : 20-07-2023</h4>
+                                </div>
+                            </div>
+                            <div class=" news_card_flex border-bottom mb-3">
+                                <div class="news_icons_card">
+                                    <img src="./image/newsicon.png" alt="">
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-newspaper" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z" />
+                                    <path
+                                        d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z" />
+                                </svg> -->
+                                </div>
+                                <div class="whatsnew-sub-content scnd_color_date">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <h4>Date : 20-07-2023</h4>
+                                </div>
+                            </div>
+                            <div class=" news_card_flex">
+                                <div class="news_icons_card">
+                                    <img src="./image/newsicon.png" alt="">
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-newspaper" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z" />
+                                    <path
+                                        d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z" />
+                                </svg> -->
+                                </div>
+                                <div class="whatsnew-sub-content scnd_color_date">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <h4>Date : 20-07-2023</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="first-card">
+                        <div class="card-head card_header_fst">
+                            <div class="santosh_task_icon align-self-center">
+
+                                <div class="align-self-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-link"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                                        <path
+                                            d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
+                                    </svg>
+
+                                </div>
+                                <div class="align-self-center">
+                                    <h3>Whats New</h3>
+                                </div>
+                            </div>
+                            <div class="align-self-center"> <a href="">View All</a></div>
+                        </div>
+                        <div class="whatsnew-content">
+                            <div class="p-1">
+                                <div class="tab-content news_card_content mt-0">
+                                    <div class="done_icon align-self-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                            class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                        </svg>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <h3>Bill Payment(Urban)</h3>
+                                    </div>
+                                </div>
+                                <div class="tab-content news_card_content">
+                                    <div class="done_icon align-self-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                            class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                        </svg>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <h3>Bill Payment(Rural)</h3>
+                                    </div>
+                                </div>
+                                <div class="tab-content news_card_content">
+                                    <div class="done_icon align-self-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                            class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                        </svg>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <h3>Prepaid meter</h3>
+                                    </div>
+                                </div>
+                                <div class="tab-content news_card_content">
+                                    <div class="done_icon align-self-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                            class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                        </svg>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <h3>Prepaid Recharge </h3>
+                                    </div>
+                                </div>
+                                <div class="tab-content news_card_content">
+                                    <div class="done_icon align-self-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                            class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                        </svg>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <h3>Prepaid Genus meter</h3>
+                                    </div>
+                                </div>
+                                <div class="tab-content news_card_content">
+                                    <div class="done_icon align-self-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                            class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                        </svg>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <h3>Prepaid Recharge </h3>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Servicess section  -->
+    <section class="services-box">
+        <div class="container-xxl">
+            <div class="text-center our_service_sec py-4">
+                <h3>Our Services</h3>
+                <hr class="hr" />
+            </div>
+            <div class="row service-grid">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="service-item calculoter_note">
+                        <img src="./image/calculoter_note.png" alt="">
+                        <h2>Tarrif Information</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="service-item services_notes">
+                        <img src="./image/services_notes.png" alt="">
+                        <h2>Regultory Commision</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="service-item computer_services">
+                        <img src="./image/computer_services.png" alt="">
+                        <h2>Download Forms</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="service-item power_services">
+                        <img src="./image/power_services.png" alt="">
+                        <h2>Power saving & Safety</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="important_link_section">
+        <div class="container-xxl py-4 mb-3">
+            <div class="imp_heading">
+                <h2>Important Links</h2>
+            </div>
+            <div class="link_slider">
+
+                <!-- splide slider  -->
+                <div class="splide">
+                    <div class="splide__track splide_imp_image">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="./image/imp-1.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./image/img-2.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./image/img-3.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./image/img-4.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./image/img-5.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./image/img-6.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="footer_section">
+            <div class="container-xxl">
+                <div class="row pt-3 ">
+                    <div class="col-lg-6 col-12">
+                        <figure class="logo_header">
+                            <img src="./image/PVVNL-Logo.png" alt="purvanchal logo" class="img-fluid w-70">
+                        </figure>
+                        <div class="wrap_footer_qr_flex">
+                            <div class="footer_addres_qr">
+                                <div class="address_location_Contact">
+                                    <div class="align-self-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                            <path
+                                                d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                        </svg>
+                                    </div>
+                                    <div class="footer_bottom_margin">
+                                        <p class="footer_paragraph mb-0">
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                        <p class="footer_paragraph mb-0">
+                                            Lorem, ipsum dolor.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="address_location_Contact">
+                                    <div class="align-self-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-telephone-outbound" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z" />
+                                        </svg>
+                                    </div>
+                                    <div class="footer_bottom_margin">
+                                        <p class="footer_paragraph mb-0">
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                        <p class="footer_paragraph mb-0">
+                                            Lorem, ipsum dolor.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="address_location_Contact">
+                                    <div class="align-self-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="footer_bottom_margin">
+                                        <p class="footer_paragraph mb-0">
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                        <p class="footer_paragraph mb-0">
+                                            Lorem, ipsum dolor.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scan_sr">
+                                <img src="./image/qr.png" alt="">
+                                <p class="footer_paragraph">Scan QR Code</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 py-3 ">
+                        <div class="policies_footer">
+                            <h3>
+                                POLICIES
+                            </h3>
+                            <ul>
+                                <li>
+                                    <a href="#" class="footer_paragraph">
+                                        Terms & Conditions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer_paragraph">
+                                        Disclaimer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer_paragraph">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer_paragraph">
+                                        Hyperlinkking Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer_paragraph">
+                                        Copyright Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer_paragraph">
+                                        Help
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="reserve_footer pt-2">
+                            <p class="footer_paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
+                            </p>
+                            <div class="py-3 mb-2">
+                                <a href="" class="footer_btn_here">Web Information Manager</a>
+                            </div>
+                            <div class="footer_card_reserve">
+                                <p class="footer_paragraph">
+                                    &copy; 2023 ALL RIGHTs RESERVED
+                                </p>
+                                <p class="footer_paragraph">
+                                    Last Updated On: 17 July 2023, 05:23 PM
+                                </p>
+                                <p class="footer_paragraph">
+                                    Visitors: <span>21456326</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section_footer_copyright">
+            <div class="container-xxl py-2 footer_copyright_hight">
+                <p class="footer_paragraph mb-0 ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="footer_paragraph mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In, unde voluptatibus optio omnis
+                    veritatis, sed est id libero
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- bootstrap script  -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- main js link -->
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
