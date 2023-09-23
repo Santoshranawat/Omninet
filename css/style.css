@@ -456,11 +456,17 @@ li .footer_paragraph {
 
         .slider-card {
             position: relative;
-            margin-top: -40px;
+            margin-top: 40px;
             border-radius: 20px;
             box-shadow: 0 0 30px rgb(118, 129, 132);
             z-index: 99;
             background-color: #fff;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .slider-card {
+                margin-top: -40px;
+            }
         }
 
         .slider-card-img {
