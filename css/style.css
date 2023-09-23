@@ -878,3 +878,46 @@ p{
         .nav-item:hover .dropdown-menu{
             display: block !important;
         }
+
+
+        /* #news-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            animation: scroll 3s linear infinite;
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(10%);
+            }
+            100% {
+                transform: translateY(-5%);
+            }
+        } */
+
+        
+
+    
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 9999;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #F88623;
+      color: white;
+      cursor: pointer;
+      padding: 12px 15px;
+      border-radius: 4px;
+    }
+    
+    #myBtn:hover {
+      background-color: #01305c;
+    }
